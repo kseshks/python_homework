@@ -1,0 +1,117 @@
+commit 56494bb16b9dcdb82844275d3a4ff0b71e1b7290 (HEAD -> main, origin/main, origin/HEAD)
+Merge: cca26c5 451e1a0
+Author: Tim Hoffmann <2836374+timhoffm@users.noreply.github.com>
+Date:   Tue Sep 30 17:21:33 2025 +0200
+
+    Merge pull request #30619 from anntzer/step
+
+    Include step info in str(scroll_event).
+
+commit cca26c579b2365c4b8398d7d2f8528de1480077a
+Merge: 8e2eb5d 23b9ffd
+Author: Tim Hoffmann <2836374+timhoffm@users.noreply.github.com>
+Date:   Tue Sep 30 17:20:24 2025 +0200
+
+    Merge pull request #30620 from anntzer/dd
+
+    Add --debug flag to python -mmatplotlib.dviread CLI.
+
+commit 8e2eb5d63a31371dc294d5b39ad9d9716d004495
+Merge: c3f423d a3fafa6
+Author: Elliott Sales de Andrade <quantum.analyst@gmail.com>
+Date:   Tue Sep 30 04:45:48 2025 -0400
+
+    Merge pull request #30499 from dstansby/rect-select-cursor
+
+    Improve cursor icons with RectangleSelector
+
+commit 8e2eb5d63a31371dc294d5b39ad9d9716d004495
+Merge: c3f423d a3fafa6
+Author: Elliott Sales de Andrade <quantum.analyst@gmail.com>
+Date:   Tue Sep 30 04:45:48 2025 -0400
+
+    Merge pull request #30499 from dstansby/rect-select-cursor
+
+    Improve cursor icons with RectangleSelector
+
+commit 56494bb16b9dcdb82844275d3a4ff0b71e1b7290 (HEAD -> main, origin/main, origin/HEAD)
+Merge: cca26c5 451e1a0
+Author: Tim Hoffmann <2836374+timhoffm@users.noreply.github.com>
+Date:   Tue Sep 30 17:21:33 2025 +0200
+
+    Merge pull request #30619 from anntzer/step
+
+    Include step info in str(scroll_event).
+
+commit 56494bb16b9dcdb82844275d3a4ff0b71e1b7290 (HEAD -> main, origin/main, origin/HEAD)
+Merge: cca26c5 451e1a0
+Author: TimTim  <3234_timtim@users.noreply.github.com>
+Date:   Tue Sep 30 17:21:33 2025 +0200
+
+    Merge pull request #30619 from anntzer/step
+
+    Include step info in str(scroll_event).
+
+commit 56494bb16b9dcdb82844275d3a4ff0b71e1b7290 (HEAD -> main, origin/main, origin/HEAD)
+Merge: cca26c5 451e1a0
+Author: TimTim  <3234_timtim@users.noreply.github.com>
+Date:   Tue Sep 30 17:21:33 2025 +0200
+
+    Merge pull request #30619 from anntzer/step
+
+    Include step info in str(scroll_event).
+
+commit 56494bb16b9dcdb82844275d3a4ff0b71e1b7290 (HEAD -> main, origin/main, origin/HEAD)
+Merge: cca26c5 451e1a0
+Author: TimTim  <3234_timtim@users.noreply.github.com>
+Date:   Tue Sep 30 17:21:33 2025 +0200
+
+    Merge pull request #30619 from anntzer/step
+
+    Include step info in str(scroll_event).
+
+commit 56494bb16b9dcdb82844275d3a4ff0b71e1b7290 (HEAD -> main, origin/main, origin/HEAD)
+Merge: cca26c5 451e1a0
+Author: TimTim  <meme@users.noreply.github.com>
+Date:   Tue Sep 30 17:21:33 2025 +0200
+
+    Merge pull request #30619 from anntzer/step
+
+    Include step info in str(scroll_event).
+
+commit 56494bb16b9dcdb82844275d3a4ff0b71e1b7290 (HEAD -> main, origin/main, origin/HEAD)
+Merge: cca26c5 451e1a0
+Author: TimTim  <meme@users.noreply.github.com>
+Date:   Tue Sep 30 17:21:33 2025 +0200
+
+    Merge pull request #30619 from anntzer/step
+
+    Include step info in str(scroll_event).
+
+commit 56494bb16b9dcdb82844275d3a4ff0b71e1b7290 (HEAD -> main, origin/main, origin/HEAD)
+Merge: cca26c5 451e1a0
+Author: TimTim  <skip@users.noreply.github.com>
+Date:   Tue Sep 30 17:21:33 2025 +0200
+
+    Merge pull request #30619 from anntzer/step
+
+    Include step info in str(scroll_event).
+
+commit 56494bb16b9dcdb82844275d3a4ff0b71e1b7290 (HEAD -> main, origin/main, origin/HEAD)
+Merge: cca26c5 451e1a0
+Author: TimTim  <skip@users.noreply.github.com>
+Date:   Tue Sep 30 17:21:33 2025 +0200
+
+    Merge pull request #30619 from anntzer/step
+
+    Include step info in str(scroll_event).
+
+commit 56494bb16b9dcdb82844275d3a4ff0b71e1b7290 (HEAD -> main, origin/main, origin/HEAD)
+Merge: cca26c5 451e1a0
+Author: TimTim  <lolololo@users.noreply.github.com>
+Date:   Tue Sep 30 17:21:33 2025 +0200
+
+    Merge pull request #30619 from anntzer/step
+
+    Include step info in str(scroll_event).
+
