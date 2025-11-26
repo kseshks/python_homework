@@ -1,60 +1,95 @@
-# продолжение классной работы с 29.10
-#2 написать декоратор, аналогичный декоратору functools.cache, но позволяющий использовать в качестве аргументов функции нехэшируемые типы - список, множество, словарь
+#cube
+import math
+import tkinter as tk
 
-'''@mynewcache
-def method(1: List):
-    return sum(1) ''' 
+class Mat:
+    def __init__(self, data):
+        self.data = data
+        self.rows = len(data)
+        self.cols = len(data[0])
 
-from functools import wraps
+    def __mul__(self, other):
+        if isinstance(other, (int, float)):
+            result = [
+                [self.data[i][j] * other for j in range(self.cols)]
+                for i in range(self.rows)
+            ]
+            return Mat(result)
+        else:
+            if self.cols != other.rows:
+                raise ValueError("Размеры матриц не совпадают")
+            result = [
+                [sum(self.data[i][k] * other.data[k][j] for k in range(self.cols))
+                for j in range(other.cols)]
+                for i in range(self.rows)
+            ]
+            return Mat(result)
 
-def mynewcache(func):
-    cache = {}
+def rotation_x(angle):
+    return Mat([
+        [1, 0, 0],
+        [0, math.cos(angle), -math.sin(angle)],
+        [0, math.sin(angle), math.cos(angle)]
+    ])
+
+def rotation_y(angle):
+    return Mat([
+        [math.cos(angle), 0, math.sin(angle)],
+        [0, 1, 0],
+        [-math.sin(angle), 0, math.cos(angle)]
+    ])
+
+root = tk.Tk()
+canvas = tk.Canvas(root, width=600, height=600, bg="white")
+canvas.pack()
+
+points = [
+    [-1, -1, -1], [1, -1, -1], [-1, 1, -1], [1, 1, -1],
+    [-1, -1, 1], [1, -1, 1], [-1, 1, 1], [1, 1, 1]
+]
+
+edges = [
+    (0, 1), (1, 3), (3, 2), (2, 0),
+    (4, 5), (5, 7), (7, 6), (6, 4), 
+    (0, 4), (1, 5), (2, 6), (3, 7)  
+]
+
+angle_x = 0
+angle_y = 0
+
+def draw_cube():
+    global angle_x, angle_y
+    canvas.delete("all")
     
-    @wraps(func)
-    def wrapper(*args, **kwargs):
-        def make_hashable(item):
-            if isinstance(item, (list, tuple)):
-                return tuple(make_hashable(e) for e in item)
-            elif isinstance(item, set):
-                return tuple(sorted(make_hashable(e) for e in item))
-            elif isinstance(item, dict):
-                return tuple(sorted((make_hashable(k), make_hashable(v)) 
-                                  for k, v in item.items()))
-            return item
-        
-        key = (make_hashable(args), make_hashable(kwargs))
-        
-        if key not in cache:
-            cache[key] = func(*args, **kwargs)
-        return cache[key]
+    rotation = rotation_y(angle_y) * rotation_x(angle_x)
     
-    return wrapper
+    transformed_points = []
+    
+    for point in points:
+        vec = Mat([[point[0]], [point[1]], [point[2]]])
+        rotated = rotation * vec
+        x, y, z = rotated.data[0][0], rotated.data[1][0], rotated.data[2][0]
+        
+        scale = 200 / (z + 4)
+        x2d = 300 + x * scale
+        y2d = 300 + y * scale
+        
+        transformed_points.append((x2d, y2d))
 
-@mynewcache
-def method(lst):
-    return sum(lst)
+    for edge in edges:
+        p1 = transformed_points[edge[0]]
+        p2 = transformed_points[edge[1]]
+        canvas.create_line(p1[0], p1[1], p2[0], p2[1], width=2)
 
-print(method([1, 2, 3]))
-print(method([1, 2, 3]))  #из кэша
-print(method([4, 5, 6]))
-print(method([4, 5, 6]))  #из кэша
+    for x, y in transformed_points:
+        canvas.create_oval(x-3, y-3, x+3, y+3, fill="black")
 
+    angle_x += 0.02
+    angle_y += 0.015
+    
+    root.after(30, draw_cube)
 
-print('множества')
-@mynewcache
-def process_set(s):
-    return len(s)
-
-print(process_set({1, 2, 3}))
-print(process_set({1, 2, 3}))  #из кэша
-print(process_set({3, 2, 1}))  #из кэша
+draw_cube()
+root.mainloop()
 
 
-print('словари')
-@mynewcache
-def process_dict(d):
-    return sum(d.values())
-
-print(process_dict({'a': 1, 'b': 2}))
-print(process_dict({'a': 1, 'b': 2}))
-print(process_dict({'b': 2, 'a': 1}))
