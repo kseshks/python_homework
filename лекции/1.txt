@@ -1,0 +1,49 @@
+[2025-11-12 14:30:01] INFO User "alice" logged in from 192.168.0.4
+[2025-11-12 14:30:12] WARNING Suspicious activity detected for "eve"
+[2025-11-12 14:30:25] ERROR Failed login for user "bob": wrong password
+[2025-11-12 14:30:40] INFO User "carol" logged in from 10.0.0.12
+[2025-11-12 14:31:03] INFO User "dave" logged in from 192.168.1.22
+[2025-11-12 14:31:19] ERROR Failed login for user "frank": account locked
+[2025-11-12 14:31:33] WARNING Password attempt limit exceeded for "bob"
+[2025-11-12 14:31:50] INFO User "erin" logged in from 172.16.0.20
+[2025-11-12 14:32:00] INFO User "george" logged in from 192.168.3.14
+[2025-11-12 14:32:17] ERROR Failed login for user "alice": wrong password
+[2025-11-12 14:32:33] WARNING Multiple login attempts detected for "carol"
+[2025-11-12 14:32:49] INFO User "bob" logged in from 192.168.0.7
+[2025-11-12 14:33:05] ERROR Failed login for user "eve": wrong password
+[2025-11-12 14:33:18] INFO User "frank" logged in from 10.0.0.99
+[2025-11-12 14:33:29] WARNING Password attempt limit exceeded for "dave"
+[2025-11-12 14:33:44] INFO User "kate" logged in from 192.168.5.11
+[2025-11-12 14:34:01] ERROR Failed login for user "george": wrong password
+[2025-11-12 14:34:15] INFO User "bob" logged in from 192.168.0.7
+[2025-11-12 14:34:30] WARNING Suspicious activity detected for "erin"
+[2025-11-12 14:34:47] ERROR Failed login for user "alice": account locked
+[2025-11-12 14:35:03] INFO User "dave" logged in from 192.168.1.22
+[2025-11-12 14:35:22] INFO User "carol" logged in from 10.0.0.12
+[2025-11-12 14:35:41] WARNING Password attempt limit exceeded for "frank"
+[2025-11-12 14:35:55] ERROR Failed login for user "kate": wrong password
+[2025-11-12 14:36:11] INFO User "eve" logged in from 172.16.0.44
+[2025-11-12 14:36:29] WARNING Suspicious activity detected for "george"
+[2025-11-12 14:36:43] INFO User "bob" logged in from 192.168.0.7
+[2025-11-12 14:37:03] ERROR Failed login for user "dave": wrong password
+[2025-11-12 14:37:18] INFO User "alice" logged in from 192.168.0.4
+[2025-11-12 14:37:34] WARNING Multiple login attempts detected for "kate"
+[2025-11-12 14:37:50] INFO User "frank" logged in from 10.0.0.99
+[2025-11-12 14:38:05] ERROR Failed login for user "erin": wrong password
+[2025-11-12 14:38:21] INFO User "carol" logged in from 10.0.0.12
+[2025-11-12 14:38:37] WARNING Suspicious activity detected for "bob"
+[2025-11-12 14:38:55] ERROR Failed login for user "george": wrong password
+[2025-11-12 14:39:12] INFO User "dave" logged in from 192.168.1.22
+[2025-11-12 14:39:28] WARNING Password attempt limit exceeded for "alice"
+[2025-11-12 14:39:42] INFO User "erin" logged in from 172.16.0.20
+[2025-11-12 14:39:59] ERROR Failed login for user "kate": wrong password
+[2025-11-12 14:40:15] INFO User "eve" logged in from 172.16.0.44
+[2025-11-12 14:40:29] WARNING Multiple login attempts detected for "frank"
+[2025-11-12 14:40:44] ERROR Failed login for user "carol": wrong password
+[2025-11-12 14:41:01] INFO User "bob" logged in from 192.168.0.7
+[2025-11-12 14:41:17] WARNING Suspicious activity detected for "dave"
+[2025-11-12 14:41:33] ERROR Failed login for user "george": wrong password
+[2025-11-12 14:41:49] INFO User "alice" logged in from 192.168.0.4
+[2025-11-12 14:42:05] WARNING Password attempt limit exceeded for "erin"
+[2025-11-12 14:42:20] ERROR Failed login for user "eve": wrong password
+[2025-11-12 14:42:36] INFO User "kate" logged in from 192.168.5.11

@@ -1,0 +1,5 @@
+filter Data
+print $2 $4 $6
+add $1 $2
+go
+
